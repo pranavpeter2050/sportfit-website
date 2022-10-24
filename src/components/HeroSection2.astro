@@ -1,0 +1,67 @@
+---
+import classes_breadcrumb from "../img/breadcrumb/classes-breadcrumb.jpg";
+
+export interface Props {
+    pageTitle?: string;
+    showExtra?: boolean;
+}
+
+const { pageTitle } = Astro.props as Props;
+---
+
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg" data-setbg={ classes_breadcrumb }>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>{ pageTitle }</h2>
+                    <div class="breadcrumb-option">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <span>{ pageTitle }</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+
+<style>
+/*---------------------
+  Breadcrumb Section
+-----------------------*/
+.breadcrumb-section {
+	padding-top: 190px;
+	height: 400px;
+}
+.breadcrumb-text {
+	text-align: center;
+}
+.breadcrumb-text h2 {
+	font-size: 60px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.breadcrumb-text .breadcrumb-option a {
+	font-size: 16px;
+	color: #ffffff;
+	display: inline-block;
+	margin-right: 10px;
+	position: relative;
+}
+.breadcrumb-text .breadcrumb-option a:after {
+	position: absolute;
+	right: -10px;
+	top: 0;
+	content: "";
+	font-family: "FontAwesome";
+}
+.breadcrumb-text .breadcrumb-option span {
+	font-size: 16px;
+	color: #bdbdbd;
+	display: inline-block;
+}
+</style>
