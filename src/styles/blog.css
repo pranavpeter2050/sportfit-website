@@ -1,0 +1,32 @@
+/*---------------------
+  Blog Section
+-----------------------*/
+
+.blog-section {
+	padding-bottom: 50px;
+}
+.single-blog-item {
+	margin-bottom: 42px;
+}
+.single-blog-item img {
+	min-width: 100%;
+	margin-bottom: 30px;
+}
+.single-blog-item .blog-widget {
+	margin-bottom: 10px;
+}
+.single-blog-item .blog-widget .bw-date {
+	font-size: 14px;
+	color: #bdbdbd;
+	display: inline-block;
+	margin-right: 8px;
+}
+.single-blog-item .blog-widget .tag {
+	font-size: 14px;
+	color: #f15d44;
+}
+.single-blog-item h4 a {
+	color: #111111;
+	font-weight: 600;
+	line-height: 30px;
+}
