@@ -1,0 +1,145 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroSection2 from "../components/HeroSection2.astro";
+---
+
+<Layout pageTitle="About">
+
+<HeroSection2 pageTitle="About"/>
+
+    <!-- About Section Begin -->
+    <section class="about-section about-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-pic">
+                        <img src="img/about-pic.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=SlPhMPnQ58k" class="play-btn video-popup">
+                            <img src="img/play.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2>Story About Us</h2>
+                        <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+                            sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
+                            cursus a amet.</p>
+                        <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+                            quam semper libero sit amet.</p>
+                        <img src="img/about-signature.png" alt="">
+                        <div class="at-author">
+                            <h4>Lettie Chavez</h4>
+                            <span>CEO - Founder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Gym Award Section Begin -->
+    <section class="gym-award spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="award-text">
+                        <h2>Best gym award</h2>
+                        <p>Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium sollicitudin,
+                            nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate cursus a
+                            amet.</p>
+                        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida quam semper libero
+                            sit amet. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida quam
+                            semper libero sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/award.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gym Award Section End -->
+
+</Layout>
+
+<style>
+/*---------------------
+  About Section
+-----------------------*/
+
+.about-pic {
+	position: relative;
+}
+.about-pic img {
+	min-width: 100%;
+}
+.about-pic .play-btn {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-41.5px, -41.5px);
+	-ms-transform: translate(-41.5px, -41.5px);
+	transform: translate(-41.5px, -41.5px);
+}
+.about-text {
+	padding-top: 15px;
+	padding-left: 40px;
+}
+.about-text h2 {
+	font-size: 40px;
+	color: #111111;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+.about-text p {
+	color: #6b6b6b;
+}
+.about-text p.first-para {
+	margin-bottom: 10px;
+}
+.about-text p.second-para {
+	margin-bottom: 50px;
+}
+.about-text img {
+	margin-bottom: 25px;
+}
+.about-text .at-author h4 {
+	font-size: 22px;
+	color: #111111;
+	font-weight: 600;
+}
+.about-text .at-author span {
+	font-size: 12px;
+	color: #f15d44;
+}
+.about-section.about-page .about-text {
+	padding-top: 8px;
+}
+.about-section.about-page .about-text h2 {
+	margin-bottom: 20px;
+}
+.about-section.about-page .about-text .second-para {
+	margin-bottom: 28px;
+}
+
+/*---------------------
+  Gym Award Section
+-----------------------*/
+
+.award-text {
+	padding-top: 20px;
+}
+.award-text h2 {
+	font-size: 40px;
+	font-weight: 600;
+	color: #111111;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.award-text p {
+	margin-bottom: 10px;
+}
+</style>
