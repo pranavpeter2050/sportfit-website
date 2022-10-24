@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroSection2 from "../components/HeroSection2.astro";
+import about_pic from "../img/about-pic.jpg";
+import play from "../img/play.png";
+import about_signature from "../img/about-signature.png";
+import award from "../img/award.jpg"
 ---
 
 <Layout pageTitle="About">
@@ -13,9 +17,9 @@ import HeroSection2 from "../components/HeroSection2.astro";
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-pic">
-                        <img src="img/about-pic.jpg" alt="">
+                        <img src={ about_pic } alt="">
                         <a href="https://www.youtube.com/watch?v=SlPhMPnQ58k" class="play-btn video-popup">
-                            <img src="img/play.png" alt="">
+                            <img src={ play } alt="">
                         </a>
                     </div>
                 </div>
@@ -27,7 +31,7 @@ import HeroSection2 from "../components/HeroSection2.astro";
                             cursus a amet.</p>
                         <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
                             quam semper libero sit amet.</p>
-                        <img src="img/about-signature.png" alt="">
+                        <img src={ about_signature } alt="">
                         <div class="at-author">
                             <h4>Lettie Chavez</h4>
                             <span>CEO - Founder</span>
@@ -55,7 +59,7 @@ import HeroSection2 from "../components/HeroSection2.astro";
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="img/award.jpg" alt="">
+                    <img src={ award } alt="">
                 </div>
             </div>
         </div>
