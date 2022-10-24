@@ -1,0 +1,216 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroSection2 from "../components/HeroSection2.astro";
+import icon_1 from "../img/icon/icon-1.png";
+import icon_2 from "../img/icon/icon-2.png";
+import icon_3 from "../img/icon/icon-3.png";
+import location from "../img/icon/location.png";
+---
+
+<Layout pageTitle="Contact">
+
+<HeroSection2 pageTitle="Contact"/>
+
+<!-- Map Section Begin -->
+<div class="map">
+    <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24112.92132811736!2d-74.20651812810036!3d40.93514309648714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fda38587e887%3A0xf03207815e338a0d!2sHaledon%2C%20NJ%2007508%2C%20USA!5e0!3m2!1sen!2sbd!4v1578120776078!5m2!1sen!2sbd"
+        height="612" style="border:0;" allowfullscreen=""></iframe> -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d437.73520689966125!2d77.3511947!3d28.6333088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc00490419a7a8ed9!2sSportsFit%20Fitness%20Center!5e0!3m2!1sen!2sin!4v1666629337377!5m2!1sen!2sin"
+        height="612" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <img src={ location } alt=""> -->
+</div>
+<!-- Map Section End -->
+
+<!-- Contact Section Begin -->
+<section class="contact-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="contact-info">
+                    <h4>Contacts Us</h4>
+                    <div class="contact-address">
+                        <div class="ca-widget">
+                            <div class="cw-icon">
+                                <img src={ icon_1 } alt="">
+                            </div>
+                            <div class="cw-text">
+                                <h5>Our Location</h5>
+                                <p>Nyay Khand I, Indirapuram, Ghaziabad, Uttar Pradesh 201010</p>
+                            </div>
+                        </div>
+                        <div class="ca-widget">
+                            <div class="cw-icon">
+                                <img src={ icon_2 } alt="">
+                            </div>
+                            <div class="cw-text">
+                                <h5>Phone:</h5>
+                                <p>+65 11.188.888</p>
+                            </div>
+                        </div>
+                        <div class="ca-widget">
+                            <div class="cw-icon">
+                                <img src={ icon_3 } alt="">
+                            </div>
+                            <div class="cw-text">
+                                <h5>Mail</h5>
+                                <p>hellocolorlib@ gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="contact-form">
+                    <h4>Leave A Comment</h4>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Your name">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Your email">
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea placeholder="Your messages"></textarea>
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
+
+</Layout>
+
+<style>
+/*---------------------
+  Map Section
+-----------------------*/
+.map {
+	height: 612px;
+	position: relative;
+}
+.map iframe {
+	width: 100%;
+}
+.map img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-14px, -21px);
+	-ms-transform: translate(-14px, -21px);
+	transform: translate(-14px, -21px);
+}
+
+/*---------------------
+  Contact Section
+-----------------------*/
+.contact-info h4 {
+	font-weight: 600;
+	color: #111111;
+	text-transform: uppercase;
+	margin-bottom: 47px;
+}
+.contact-info .contact-address .ca-widget {
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+.contact-info .contact-address .ca-widget .cw-icon {
+	height: 74px;
+	width: 74px;
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 74px;
+	float: left;
+	margin-right: 28px;
+}
+.contact-info .contact-address .ca-widget .cw-text {
+	padding-top: 12px;
+}
+.contact-info .contact-address .ca-widget .cw-text h5 {
+	color: #bdbdbd;
+	margin-bottom: 5px;
+}
+.contact-info .contact-address .ca-widget .cw-text p {
+	margin-bottom: 0;
+	color: #111111;
+	font-size: 18px;
+}
+.contact-form h4 {
+	font-weight: 600;
+	color: #111111;
+	text-transform: uppercase;
+	margin-bottom: 47px;
+}
+.contact-form form input {
+	width: 100%;
+	height: 51px;
+	border: 1px solid #e1e1e1;
+	padding-left: 20px;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.contact-form form input::-webkit-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form input::-moz-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form input:-ms-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form input::-ms-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form input::placeholder {
+	color: #9a9a9a;
+}
+.contact-form form input:focus {
+	color: #111111;
+}
+.contact-form form textarea {
+	width: 100%;
+	height: 150px;
+	border: 1px solid #e1e1e1;
+	padding-left: 20px;
+	font-size: 16px;
+	padding-top: 10px;
+	margin-bottom: 42px;
+	resize: none;
+}
+.contact-form form textarea::-webkit-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form textarea::-moz-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form textarea:-ms-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form textarea::-ms-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form textarea::placeholder {
+	color: #9a9a9a;
+}
+.contact-form form textarea:focus {
+	color: #111111;
+}
+.contact-form form button {
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 33px;
+	display: inline-block;
+	background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
+	background: -o-linear-gradient(left, #eb3c5a, #f67831);
+	background: linear-gradient(to right, #eb3c5a, #f67831);
+	border: none;
+	text-transform: uppercase;
+}
+</style>
