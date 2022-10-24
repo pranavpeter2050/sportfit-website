@@ -1,0 +1,58 @@
+---
+import hero_bg from '../img/hero-bg.jpg';
+
+export interface Props {
+    heading?: string;
+    text?: string;
+    span?: string;
+    showExtra?: boolean;
+}
+
+const { heading = "BMI CALCULATOR", text = "Gutim comes packed with the user-friendly BMI Calculator<br /> shortcode which lets", span = "FITNESS ELEMENTS", showExtra = false } = Astro.props as Props;
+---
+
+<!-- Hero Section Begin -->
+<section class="hero-section set-bg" data-setbg={hero_bg}>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="hero-text">
+                    <span>{span}</span>
+                    <h1>{heading}</h1>
+                    <p>{text}</p>
+                    <a href="#" class="primary-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+
+<style>
+/*---------------------
+  Hero Section
+-----------------------*/
+
+.hero-section {
+	height: 880px;
+	padding-top: 335px;
+}
+.hero-text span {
+	font-size: 14px;
+	color: #f15d44;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+.hero-text h1 {
+	font-size: 72px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-top: 11px;
+	margin-bottom: 18px;
+}
+.hero-text p {
+	color: #ffffff;
+	margin-bottom: 44px;
+}
+</style>
