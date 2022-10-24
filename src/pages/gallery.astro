@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroSection2 from "../components/HeroSection2.astro";
+import gallery_1 from "../img/gallery/gallery-1.jpg";
+import gallery_2 from "../img/gallery/gallery-2.jpg";
+import gallery_3 from "../img/gallery/gallery-3.jpg";
+import gallery_4 from "../img/gallery/gallery-4.jpg";
+import gallery_5 from "../img/gallery/gallery-5.jpg";
+import gallery_6 from "../img/gallery/gallery-6.jpg";
+import gallery_7 from "../img/gallery/gallery-7.jpg";
+---
+
+<Layout pageTitle="Gallery">
+
+<HeroSection2 pageTitle="Gallery"/>
+
+    <!-- Gallery Section Begin -->
+    <div class="gallery-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="gallery-controls">
+                        <li class="active" data-filter=".all">all gallery</li>
+                        <li data-filter=".fitness">fitness</li>
+                        <li data-filter=".coaching">coaching</li>
+                        <li data-filter=".event">event</li>
+                        <li data-filter=".other">other</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row gallery-filter">
+                <div class="col-lg-6 mix all fitness">
+                    <img src={ gallery_1 } alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 mix all fitness coaching">
+                            <img src={ gallery_2 } alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-12 mix all coaching">
+                                    <img src={ gallery_3 } alt="">
+                                </div>
+                                <div class="col-lg-12 mix all coaching">
+                                    <img src={ gallery_4 } alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 mix all other">
+                            <img src={ gallery_5 } alt="">
+                        </div>
+                        <div class="col-lg-6 mix all other">
+                            <img src={ gallery_6 } alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mix all event">
+                    <img src={ gallery_7 } alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery Section End -->
+
+</Layout>
+
+<style>
+/*---------------------
+  Gallery Section
+-----------------------*/
+
+.gallery-section {
+	padding-bottom: 70px;
+}
+.gallery-controls {
+	text-align: center;
+	margin-bottom: 55px;
+}
+.gallery-controls li {
+	list-style: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	color: #111111;
+	text-transform: uppercase;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.gallery-controls li.active {
+	color: #f15d44;
+}
+.gallery-controls li:last-child {
+	margin-right: 0;
+}
+.gallery-filter img {
+	min-width: 100%;
+	margin-bottom: 30px;
+}
+</style>
