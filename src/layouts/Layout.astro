@@ -1,5 +1,12 @@
 ---
 import '../styles/global.css';
+import Header from '../components/Header.astro';
+// import bootstrap from '../styles/bootstrap.min.css';
+import '../styles/bootstrap.min.css';
+import '../styles/font-awesome.min.css';
+import '../styles/owl.carousel.min.css';
+import '../styles/magnific-popup.css';
+import '../styles/slicknav.min.css';
 
 export interface Props {
     pageTitle?: string;
@@ -23,15 +30,20 @@ const { pageTitle = 'SportFit' } = Astro.props as Props;
             rel="stylesheet">
 
         <!-- Css Styles -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- <link rel="stylesheet" href="../styles/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="../styles/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="../styles/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="../styles/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="../styles/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="../styles/style.css" type="text/css"> -->
     </head>
 
     <body>
+        <!-- Page Preloder -->
+        <!-- <div id="preloder">
+            <div class="loader"></div>
+        </div> -->
+        <Header />
         <slot/>
     </body>
 </html>
