@@ -7,6 +7,9 @@ import trainer_2 from "../img/trainer/trainer-2.jpg";
 import trainer_3 from "../img/trainer/trainer-3.jpg";
 import testimonial_1 from "../img/testimonial/testimonial-1.jpg";
 import quote_left from "../img/testimonial/quote-left.png";
+import blog_1 from "../img/blog/blog-1.jpg";
+import blog_2 from "../img/blog/blog-2.jpg";
+import blog_3 from "../img/blog/blog-3.jpg";
 ---
 
 <Layout pageTitle="SportFit | Home">
@@ -130,13 +133,58 @@ import quote_left from "../img/testimonial/quote-left.png";
     </section>
     <!-- Testimonial Section End -->
 
+    <!-- Latest Blog Section Begin -->
+    <section class="latest-blog-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Latest Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-item">
+                        <img src={ blog_1 } alt="">
+                        <div class="blog-widget">
+                            <div class="bw-date">February 17, 2019</div>
+                            <a href="#" class="tag">#Gym</a>
+                        </div>
+                        <h4><a href="#">10 States At Risk of Rural Hospital Closures</a></h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-item">
+                        <img src={ blog_2 } alt="">
+                        <div class="blog-widget">
+                            <div class="bw-date">February 17, 2019</div>
+                            <a href="#" class="tag">#Sport</a>
+                        </div>
+                        <h4><a href="#">Diver who helped save Thai soccer team</a></h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-item">
+                        <img src={ blog_3 } alt="">
+                        <div class="blog-widget">
+                            <div class="bw-date">February 17, 2019</div>
+                            <a href="#" class="tag">#Body</a>
+                        </div>
+                        <h4><a href="#">Man gets life in prison for stabbing</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Blog Section End -->
+
 </Layout>
 
 <style>
 /*---------------------
   Trainer Section
 -----------------------*/
-
 .trainer-section {
 	background: #f5f5f5;
 	padding-top: 90px;
@@ -224,10 +272,10 @@ import quote_left from "../img/testimonial/quote-left.png";
 .single-trainer-item .trainer-text .trainer-social a:last-child {
 	margin-right: 0;
 }
+
 /*---------------------
   Testimonial Section
 -----------------------*/
-
 .testimonial-section {
 	position: relative;
 }
@@ -307,5 +355,55 @@ import quote_left from "../img/testimonial/quote-left.png";
 .testimonial-slider .testimonial-item .ti-author span {
 	font-size: 16px;
 	color: #f15d44;
+}
+
+/*---------------------
+  Latest BLog Section
+-----------------------*/
+.latest-blog-section {
+	padding-bottom: 50px;
+}
+.latest-blog-section .section-title {
+	margin-bottom: 55px;
+}
+.latest-blog-section.recommend {
+	padding-top: 0;
+}
+.latest-blog-section.recommend h3 {
+	font-weight: 600;
+	color: #111111;
+	text-transform: uppercase;
+	margin-bottom: 52px;
+}
+/*---------------------
+  Blog Section
+-----------------------*/
+.blog-section {
+	padding-bottom: 50px;
+}
+.single-blog-item {
+	margin-bottom: 42px;
+}
+.single-blog-item img {
+	min-width: 100%;
+	margin-bottom: 30px;
+}
+.single-blog-item .blog-widget {
+	margin-bottom: 10px;
+}
+.single-blog-item .blog-widget .bw-date {
+	font-size: 14px;
+	color: #bdbdbd;
+	display: inline-block;
+	margin-right: 8px;
+}
+.single-blog-item .blog-widget .tag {
+	font-size: 14px;
+	color: #f15d44;
+}
+.single-blog-item h4 a {
+	color: #111111;
+	font-weight: 600;
+	line-height: 30px;
 }
 </style>
