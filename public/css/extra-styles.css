@@ -1,0 +1,31 @@
+.slicknav_menu {
+	display: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.slicknav_menu {
+		display: block;
+		background: transparent;
+		padding: 0;
+		position: relative;
+		z-index: 55;
+	}
+    .slicknav_btn {
+        margin: 22px 0;
+        border-radius: 0;
+    }
+	.slicknav_nav {
+		background: #222;
+	}
+	.slicknav_nav ul {
+		margin: 10px;
+	}
+	.slicknav_nav a:hover {
+		border-radius: 0;
+		background: #f15d44;
+		color: #ffffff;
+	}
+	.slicknav_nav a {
+		padding: 10px;
+	}
+}
