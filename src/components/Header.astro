@@ -32,7 +32,6 @@ import logo from '../img/logo.png';
 /*---------------------
   Header
 -----------------------*/
-
 .header-section {
 	position: absolute;
 	left: 0;
@@ -93,5 +92,37 @@ import logo from '../img/logo.png';
 }
 .slicknav_menu {
 	display: none;
+}
+
+/* Tablet Device: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.nav-menu .mainmenu ul li {
+		margin-right: 12px;
+	}
+	.nav-menu .signup-btn {
+		margin: 16px 0px 16px 0px;
+		width: 145px;
+	}
+}
+
+/* Large Mobile: 480px */
+@media only screen and (max-width: 767px) {
+	.nav-menu .mainmenu {
+		display: none;
+	}
+	.nav-menu .signup-btn {
+		display: none;
+	}
+
+	#mobile-menu-wrap {
+		display: block;
+	}
+	.header-mob-menu #mobile-menu-wrap .slicknav_menu {
+		display: block;
+		background: transparent !important;
+		padding: 0;
+		position: relative;
+		z-index: 55;
+	}
 }
 </style>

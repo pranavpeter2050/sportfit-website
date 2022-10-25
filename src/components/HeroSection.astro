@@ -32,7 +32,6 @@ const { heading = "BMI CALCULATOR", text = "Gutim comes packed with the user-fri
 /*---------------------
   Hero Section
 -----------------------*/
-
 .hero-section {
 	height: 880px;
 	padding-top: 335px;
@@ -54,5 +53,20 @@ const { heading = "BMI CALCULATOR", text = "Gutim comes packed with the user-fri
 .hero-text p {
 	color: #ffffff;
 	margin-bottom: 44px;
+}
+
+/* Large Mobile: 480px */
+@media only screen and (max-width: 767px) {
+    .hero-text h1 {
+		font-size: 65px;
+	}
+}
+
+/* Small Mobile: 320px */
+
+@media only screen and (max-width: 479px) {
+	.hero-text h1 {
+		font-size: 42px;
+	}
 }
 </style>
